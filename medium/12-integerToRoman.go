@@ -18,7 +18,7 @@ var keys []int = make([]int, 0)
 
 func init() {
     // Need to sort the keys, since looping over the map
-    // doesn't garauntee any specific order
+    // doesn't guarantee any specific order
     for key := range(romanMap) {
         keys = append(keys, key)
     }
