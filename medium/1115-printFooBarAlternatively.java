@@ -13,7 +13,7 @@ class FooBar {
         for (int i = 0; i < n; i++) {
             // printFoo.run() outputs "foo". Do not change or remove this line.
             this.s1.acquire();
-        	printFoo.run();
+            printFoo.run();
             this.s2.release();
         }
     }
@@ -22,7 +22,7 @@ class FooBar {
         for (int i = 0; i < n; i++) {
             // printBar.run() outputs "bar". Do not change or remove this line.
             this.s2.acquire();
-        	printBar.run();
+            printBar.run();
             this.s1.release();
         }
     }
